@@ -10,11 +10,6 @@ export const Home = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    if (actions.login(email, password)) {
-      navigate("/demo");
-    }
-  };
 
   return (
     <div className="text-center mt-5">
